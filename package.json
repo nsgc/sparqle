@@ -4,11 +4,18 @@
   "main": "main.js",
   "description": "sparql browser",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev-server": "webpack-dev-server --config webpack.config.js",
+    "build": "webpack --progress --color"
   },
   "keywords": [
     "sparql"
   ],
   "author": "nsgc",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  }
 }
