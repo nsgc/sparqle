@@ -1,0 +1,14 @@
+{
+  "name": "sparqle",
+  "version": "0.1.0",
+  "main": "main.js",
+  "description": "sparql browser",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sparql"
+  ],
+  "author": "nsgc",
+  "license": "MIT"
+}
