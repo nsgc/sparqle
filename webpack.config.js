@@ -5,7 +5,7 @@ var appRoot = path.join(projectRoot, 'app');
 
 module.exports = {
   entry: {
-    app: path.join(appRoot, 'App.jsx')
+    app: path.join(appRoot, 'app.js')
   },
   output: {
     path: projectRoot + '/dist/',
