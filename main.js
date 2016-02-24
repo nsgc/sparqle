@@ -12,10 +12,11 @@ app.on('window-all-closed', function() {
 });
 
 app.on('ready', function() {
-  mainWindow = new BrowserWindow({width: 800, height: 600});
+  //mainWindow = new BrowserWindow({width: 800, height: 600});
+  mainWindow = new BrowserWindow({width: 1800, height: 1600});
 
   mainWindow.loadUrl('file://' + __dirname + '/app/app.html');
-  //mainWindow.openDevTools();
+  mainWindow.openDevTools();
 
   mainWindow.on('closed', function() {
     mainWindow = null;

@@ -6,12 +6,17 @@ injectTapEventPlugin();
 
 import {TextField, RaisedButton} from 'material-ui'
 
+var ActionCreators = require('../actions/ActionCreators');
+
 class QueryForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
+
     let endpoint = this.refs.endpoint.getValue(),
         query = this.refs.query.getValue(),
         summary = this.refs.summary.getValue();
+
+    ActionCreators.executeQuery(endpoint, query);
     localStorage.setItem(e.target.id, JSON.stringify({endpoint: endpoint, query: query, summary: summary}));
   }
   render() {
